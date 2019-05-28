@@ -5,6 +5,7 @@ function takeANumber(currentLine, newClient) {
 }
 
 function nowServing(katzDeliLine) {
+<<<<<<< HEAD
   if(katzDeliLine.length == 0) {
     return 'There is nobody waiting to be served!';
   }
@@ -26,4 +27,12 @@ function currentLine(katzDeliLine) {
     message += `${i + 1}. ${katzDeliLine[i]}`
   }
   return `The line is currently: ${message}`;
+=======
+  if(katzDeliLine.length = 0) {
+    return 'There is nobody waiting to be served!';
+  } else {
+    katzDeliLine.splice(0, 0);
+  }
+  return katzDeliLine;
+>>>>>>> 16da5c16039036325dd43e2e62896c5c31e2c3fa
 }
